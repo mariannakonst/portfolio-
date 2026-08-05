@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>
+Operations Task Automation Platform
+</title>
+
+
+<style>
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background:#f4f6f9;
+    padding:40px;
+    color:#1f2937;
+}
+
+
+.container {
+
+    max-width:1200px;
+    margin:auto;
+    background:white;
+    padding:60px;
+    border-radius:25px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.08);
+
+}
+
+
+h1 {
+
+text-align:center;
+font-size:42px;
+
+}
+
+
+.subtitle {
+
+text-align:center;
+color:#6b7280;
+font-size:18px;
+margin-bottom:35px;
+
+}
+
+
+.image-box {
+
+    width:100%;
+    min-height:450px;
+    border-radius:20px;
+    overflow:hidden;
+    margin-bottom:60px;
+
+}
+
+
+/* Sections */
+
+.section {
+
+    margin-top:60px;
+
+}
+
+
+h2 {
+
+color:#2563eb;
+border-bottom:2px solid #e5e7eb;
+padding-bottom:10px;
+
+}
+
+
+.card {
+
+background:#f8fafc;
+padding:35px;
+border-radius:18px;
+line-height:1.9;
+font-size:17px;
+
+}
+
+.flow {
+
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+
+}
+
+
+.step {
+
+flex:1;
+min-width:260px;
+background:#eff6ff;
+padding:30px;
+border-radius:18px;
+line-height:1.8;
+
+}
+
+
+.step h3 {
+
+color:#2563eb;
+
+}
+
+
+.badge {
+
+display:inline-block;
+background:#2563eb;
+color:white;
+padding:8px 15px;
+border-radius:20px;
+margin:5px;
+
+}
+.image-box img {
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:20px;
+
+}
+
+
+</style>
+
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<h1>
+Operations Task Automation Platform
+</h1>
+
+
+<p class="subtitle">
+Enterprise workflow automation platform for Operations teams
+</p>
+
+
+
+<div class="image-box">
+
+<img src="task-platform.png" alt="Operations Platform Screenshot">
+
+</div>
+
+
+
+<div class="section">
+
+
+<h2>
+Overview
+</h2>
+
+
+<div class="card">
+
+The application is an internal Operations automation platform
+designed to reduce manual work and improve task routing processes.
+
+It provides a centralized interface where users can manage
+business rules, assignments, priorities and workflow configurations.
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="section">
+
+
+<h2>
+How the Application Works
+</h2>
+<div class="section">
+
+<h2>
+Routing Rules Management
+</h2>
+
+
+<div class="card">
+
+The platform uses configurable routing rules to automate ticket
+assignment and reduce manual work.
+
+Incoming tickets are evaluated based on priority, keywords,
+components and business rules to recommend the most suitable
+assignee.
+
+Users can access Jira directly from the platform to review,
+update and continue processing each ticket.
+
+</div>
+
+
+<div class="image-box">
+
+<img src="routing-rules.png" alt="Routing Rules Screenshot">
+
+</div>
+
+
+</div>
+
+<div class="flow">
+
+
+<div class="step">
+
+<h3>
+1. User Authentication
+</h3>
+
+Users log into the platform through a secure authentication system.
+Access is controlled based on user roles and permissions.
+
+</div>
+
+
+
+<div class="step">
+
+<h3>
+2. Rule Configuration
+</h3>
+
+Administrators create and maintain routing rules,
+keywords, components and priority conditions.
+
+</div>
+
+
+
+<div class="step">
+
+<h3>
+3. Automation Engine
+</h3>
+
+The system evaluates incoming tasks based on configured rules
+and automatically determines the correct routing path.
+
+</div>
+
+
+
+<div class="step">
+
+<h3>
+4. Task Assignment
+</h3>
+
+Tickets are assigned to the appropriate users or teams
+using predefined assignment rules.
+
+</div>
+
+
+
+<div class="step">
+
+<h3>
+5. Tracking & History
+</h3>
+
+All important actions are recorded through an audit system
+for monitoring and traceability.
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="section">
+
+
+<h2>
+Main Features
+</h2>
+
+
+<div class="card">
+
+
+<ul>
+
+<li>
+Dynamic Routing Rules Management
+</li>
+
+<li>
+Priority based workflow handling
+</li>
+
+<li>
+Component and keyword mapping
+</li>
+
+<li>
+Jira ticket integration
+</li>
+
+<li>
+Database driven configuration
+</li>
+
+<li>
+Audit history tracking
+</li>
+
+<li>
+Role based access management
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="section">
+
+
+<h2>
+Technologies
+</h2>
+
+
+<span class="badge">Python</span>
+<span class="badge">FastAPI</span>
+<span class="badge">Streamlit</span>
+<span class="badge">MySQL</span>
+<span class="badge">REST API</span>
+<span class="badge">Jira API</span>
+
+
+</div>
+
+
+
+
+<div class="section">
+
+
+<h2>
+My Contribution
+</h2>
+
+<div class="card">
+
+<ul>
+
+<li>Designed and developed automation workflows</li>
+
+<li>Created the Streamlit user interface</li>
+
+<li>Implemented backend services using FastAPI</li>
+
+<li>Designed and integrated the MySQL database for storing routing rules, assignments and configurations</li>
+
+<li>Developed CRUD operations for rule and data management</li>
+
+<li>Integrated Jira API for ticket access and assignment workflows</li>
+
+<li>Implemented audit logging and history tracking</li>
+
+</ul>
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+</body>
+
+</html>
