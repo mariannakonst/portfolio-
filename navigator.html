@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+AI Support Assistant for Jira (NSS Navigator)
+</title>
+
+<style>
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background:#f4f6f9;
+    padding:40px;
+    color:#1f2937;
+}
+
+
+.container {
+
+    max-width:1200px;
+    margin:auto;
+    background:white;
+    padding:60px;
+    border-radius:25px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.08);
+
+}
+
+
+h1 {
+
+text-align:center;
+font-size:42px;
+
+}
+
+
+.subtitle {
+
+text-align:center;
+color:#6b7280;
+font-size:18px;
+margin-bottom:35px;
+
+}
+
+
+.image-box {
+
+    width:100%;
+    min-height:450px;
+    border-radius:20px;
+    overflow:hidden;
+    margin-bottom:60px;
+
+}
+
+
+/* Sections */
+
+.section {
+
+    margin-top:60px;
+
+}
+
+
+h2 {
+
+color:#2563eb;
+border-bottom:2px solid #e5e7eb;
+padding-bottom:10px;
+
+}
+
+
+.card {
+
+background:#f8fafc;
+padding:35px;
+border-radius:18px;
+line-height:1.9;
+font-size:17px;
+
+}
+
+.flow {
+
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+
+}
+
+
+.step {
+
+flex:1;
+min-width:260px;
+background:#eff6ff;
+padding:30px;
+border-radius:18px;
+line-height:1.8;
+
+}
+
+
+.step h3 {
+
+color:#2563eb;
+
+}
+
+
+.badge {
+
+display:inline-block;
+background:#2563eb;
+color:white;
+padding:8px 15px;
+border-radius:20px;
+margin:5px;
+
+}
+.image-box img {
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:20px;
+
+}
+
+
+.note{font-size:14px;color:#6b7280;margin-top:10px;text-align:center}
+.back{display:inline-block;margin-bottom:20px;color:#2563eb;text-decoration:none}
+.shot{margin:25px 0}
+.shot img{width:100%;border-radius:16px;border:1px solid #e5e7eb}
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+<a class="back" href="index.html#projects">&larr; Back to portfolio</a>
+
+
+<h1>
+AI Support Assistant for Jira
+</h1>
+
+
+<p class="subtitle">
+Team project &middot; assistant for support consultants and team leaders
+</p>
+
+
+
+<div class="section">
+
+<h2>
+Overview
+</h2>
+
+<div class="card">
+
+NSS Navigator is an application that helps a support team handle Jira tickets faster.
+
+It analyzes incoming tickets with AI, suggests similar past cases and knowledge-base
+articles, and shows reporting screens for service levels (SLA) and team workload.
+
+Consultants use it through a Chrome extension placed next to the ticket they are working on.
+
+</div>
+
+</div>
+
+
+
+<div class="section">
+
+<h2>
+Team Project
+</h2>
+
+<div class="card">
+
+This was a team effort: the core application was developed together with colleagues,
+and I contributed to specific parts of it (see <strong>My Contribution</strong> below).
+
+The application is used internally by a pilot group of users.
+For confidentiality, all screenshots on this page are illustrations made with
+sample data, not real customer or company data.
+
+</div>
+
+</div>
+
+
+
+<div class="section">
+
+<h2>
+How the Application Works
+</h2>
+
+
+<div class="flow">
+
+
+<div class="step">
+
+<h3>
+1. Ticket Analysis
+</h3>
+
+When a ticket arrives, the application reads it and prepares an analysis
+for the consultant, with a suggested next step.
+
+</div>
+
+
+
+<div class="step">
+
+<h3>
+2. Knowledge Search
+</h3>
+
+Similar past cases and documentation articles are found using
+embeddings and AI, so the answer is easier to find.
+
+</div>
+
+
+
+<div class="step">
+
+<h3>
+3. Chrome Extension
+</h3>
+
+The result appears in a side panel in the browser,
+directly inside Jira, without switching tools.
+
+</div>
+
+
+
+<div class="step">
+
+<h3>
+4. Reports
+</h3>
+
+Team leaders see SLA monitoring and workload screens with filters
+for project, team, user group, consultant, time type and label.
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+<div class="section">
+
+<h2>
+Screens (illustrative, sample data)
+</h2>
+
+
+<div class="shot">
+
+<img src="navigator-sla.png" alt="SLA monitoring screen with sample data">
+
+<p class="note">
+SLA monitoring: tickets created and resolved per day, against the service targets.
+</p>
+
+</div>
+
+
+<div class="shot">
+
+<img src="navigator-dept.png" alt="Department overview screen with sample data">
+
+<p class="note">
+Department overview: incoming tickets, time logged per group and a filter panel.
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="section">
+
+<h2>
+Main Features
+</h2>
+
+<div class="card">
+
+<ul>
+
+<li>AI-assisted ticket analysis</li>
+
+<li>Similar-case and knowledge-base suggestions</li>
+
+<li>Chrome extension integrated with Jira</li>
+
+<li>SLA monitoring with working-hours calculation</li>
+
+<li>Department overview with combined filters</li>
+
+<li>Delivery workflow with approvals and PDF summaries</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+
+<div class="section">
+
+<h2>
+Technologies
+</h2>
+
+<span class="badge">Python</span>
+<span class="badge">FastAPI</span>
+<span class="badge">MySQL</span>
+<span class="badge">SQL Server</span>
+<span class="badge">Jira REST API</span>
+<span class="badge">Azure AI</span>
+<span class="badge">JavaScript</span>
+<span class="badge">Chrome Extension</span>
+
+</div>
+
+
+
+<div class="section">
+
+<h2>
+My Contribution
+</h2>
+
+<div class="card">
+
+<ul>
+
+<li>Deployment and configuration of the application on the company server</li>
+
+<li>Reporting screens: SLA monitoring and department overview</li>
+
+<li>Filter panel (project, team, user group, consultant, time type, label)</li>
+
+<li>Rollout of new versions of the extension to the pilot users</li>
+
+<li>Testing new features and giving feedback to the development team</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>
